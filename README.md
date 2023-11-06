@@ -34,6 +34,7 @@
 
 #### 구성요소
 
+    yolox - exp - default - yolox_base.py 41번째 줄에서 데이터셋 경로 수정 가능
     yolox - exp - yolox_base.py 에서 augmentation 값을 조절 가능. imgsz도 여기서 조절 가능
     yolox - data - data_augment.py에서는 augmentation이 수행되는 함수들이 있음. 특이하게 함수로 augmentation수행코드를 작성
     yolox - data - dataset - coco.py에서 remove_useless_info 함수 코드를 확인해보면 annotations.json의 필요없는 데이터를 pop시키는것을 확인 가능. 그 밑 COCODataset class에서 print문으로 정제된 json의 결과값 확인 가능
