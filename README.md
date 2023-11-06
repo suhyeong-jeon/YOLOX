@@ -16,6 +16,23 @@
 
     python tools/demo.py video -f exps/example/custom/yolox_m.py -c YOLOX_outputs/yolox_m/latest_ckpt.pth --path yolox/test.mp4 --conf 0.25 --nms 0.45 --tsize 640 --save_result --device gpu
 
+### 끄적끄적
+
+#### 데이터셋 구조
+main folder
+datasets 
+COCO
+train2017
+ - images
+val2017
+ - images
+annotations
+ - instances_train2017.json
+ - instances_val2017.json
+
+#### 구성요소
+yolox - exp - yolox_base.py 에서 augmentation 값을 조절 가능. imgsz도 여기서 조절 가능
+
 
 <p align="center">
 <img src="https://github.com/suhyeong-jeon/YOLOX_HumanDetector/assets/70623959/25b8bdcd-81bd-4f33-a6fa-e000481d1482">
