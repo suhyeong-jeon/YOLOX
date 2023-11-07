@@ -11,10 +11,12 @@
 ### 3. Train the model
 
     python tools/train.py -f exps/example/custom/yolox_m.py -d 1 -b 32 --fp16 -o -c yolox/yolox_m.pth
+    
 
 ### 4. Check the result
 
     python tools/demo.py video -f exps/example/custom/yolox_m.py -c YOLOX_outputs/yolox_m/latest_ckpt.pth --path yolox/test.mp4 --conf 0.25 --nms 0.45 --tsize 640 --save_result --device gpu
+    python tools/train.py --resume -f exps/example/custom/yolox_l.py -d 1 -b 10 --fp16 -o -c YOLOX_outputs/yolox_l/last_epoch_ckpt.pth (마지막 에포크부터 모델학습 다시 시작)
 
 ### 끄적끄적
 
